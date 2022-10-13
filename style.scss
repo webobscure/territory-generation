@@ -1,84 +1,83 @@
-// Файл обнуляющих стилей
-@import "nullstyle.scss";
-@import url(https://fonts.googleapis.com/css?family=Lato:400,300,700,900);
+@import url("https://fonts.googleapis.com/css2?family=Inter&family=Montserrat&display=swap");
 
 body {
-    font-family: Lato;
+    margin: 0px;
+    padding: 0px;
+    background: #1e1e1e;
+}
+
+.nav-item {
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    margin: 20px 130px;
+    line-height: 81.9%;
+    text-align: right;
+    text-transform: uppercase;
+    color: #ffffff;
+}
+
+.divider {
+    width: auto;
+    height: 0;
+    border: 1px solid #7d7d7d;
 }
 
 .about {
-    &__body {
-        max-width: 823px;
-        margin: 0px auto;
+    display: flex;
+
+    &__left {
+        max-width: 400px;
+        margin-left: 130px;
+        margin-top: 25px;
+        color: #fff;
+        font-family: "Inter";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 130.02%;
     }
-    &__header {
-        margin: 0px 0px 65px 0px;
+
+    &__right {
+        margin-top: 47px;
+        margin-left: 680px;
     }
+
     &__title {
-        margin: 0px 0px 30px 0px;
-    }
-    &__text {
-        max-width: 688px;
-        color: #868585;
-        font-size: 14px;
-        font-weight: 300;
         text-align: center;
-        line-height: 25.89px;
-        margin: 0px auto;
+        margin: 50px;
+        font-family: "Montserrat";
+        font-style: normal;
+        font-weight: 900;
+        font-size: 200px;
+        line-height: 81.9%;
+        letter-spacing: -0.03em;
+        text-transform: uppercase;
+        color: #fff;
     }
-    &__row {
-        display: flex;
-        font-size: 0;
-        margin: 0px -15px;
-    }
-    &__column {
-        padding: 0px 15px;
-        flex: 0 0 33.333%;
-    }
-}
-.title {
-    font-size: 34px;
-    font-weight: 700;
-    text-transform: uppercase;
-    letter-spacing: 8.95px;
-    position: relative;
-    text-align: center;
-    padding: 0px 0px 30px 0px;
-    &:after {
-        content: "";
-        position: absolute;
-        width: 50px;
-        bottom: 0;
-        height: 1px;
-        left: 50%;
-        background-color: #000;
-        margin: 0px 0px 0px -25px;
-    }
-}
-.item-about {
-    &__icon {
-        margin: 0px auto 40px auto;
-        border-radius: 50%;
-        width: 92px;
-        height: 92px;
-        border: 2px solid #f1f1f1;
+
+    &__subtitle {
+        font-family: "Montserrat";
+        font-style: normal;
+        font-weight: 900;
+        font-size: 40px;
+        line-height: 81.9%;
         display: flex;
         align-items: center;
-        justify-content: center;
-    }
-    &__title {
-        text-align: center;
-        color: #000000;
-        font-size: 22px;
+        letter-spacing: -0.03em;
         text-transform: uppercase;
-        letter-spacing: 3.52px;
-        margin: 0px 0px 35px 0px;
+        margin-left: 550px;
+        color: #ffffff;
     }
-    &__text {
-        text-align: center;
-        color: #868585;
-        line-height: 26px;
-        font-weight: 300;
-        font-size: 14px;
+
+    &__bottom {
+        position: absolute;
+        top: 256px;
+        left: 130px;
+    }
+
+    &__face {
+        width: 1660px;
     }
 }
